@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --colorPrimario: hsl(225, 100%, 94%);
+    --color_Primario2: hsl(245, 75%, 52%);
+
+    --neutral: hsl(225, 100%, 98%);
+    --neutral2: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --font-family: 'Fraunces', serif;
+    --font-family1: 'Red Hat Display', sans-serif;
+}
+
+body{
+    font-size: 16pt;
+    background-color:var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.plantilla{
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;  
+    margin-top: 100px;     
+}
+
+img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%
+    
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo{
+    padding-top:25px;
+    font-family: var(--font-family);
+    font-size: 18pt
+}
+
+.parrafo{
+    font-family: var(--font-family1);
+    color: var(--neutral2);
+    font-size: 10pt;
+    text-align: center; 
+    line-height: 10%;   
+}
+
+.planes{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 18px 10px;
+    background-color: var(--neutral);
+    border-radius: 15px;
+    
+}
+
+.plan{
+    font-family: var(--font-family1);
+    font-size: 12pt;
+}
+
+.precio1{
+    font-family: var(--font-family1);
+    color: var(--neutral2);
+    font-size: 12pt;
+}
+
+.link{
+    font-size: 10pt;
+    color: var(--color_Primario2);
+    font-weight: 900;
+    font-family: var(--font-family1);
+}
+
+.payment{
+    width: 307px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color_Primario2);
+    color: var(--colorPrimario);
+    font-weight: 900;
+    box-shadow: 0 5px 6px var(--color_Primario2);
+    align-items: center;
+    
+}
+
+.cancel {
+    text-decoration: none;
+    font-family: var(--font-family1);
+    color: var(--neutral2);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: medium;
+    font-weight: 700;
+}
