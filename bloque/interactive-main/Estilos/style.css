@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*texto*/
+    --texto_1: 'Overpass', sans-serif;
+    /*colors*/
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --transparente:hsl(217, 12%, 63%, .1);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    font-size: 15pt;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    
+}
+
+.contenedor {
+    background-color: var(--DarkBlue);
+    flex-direction: column;
+    margin:20px;
+    border-radius: 20px; 
+}
+
+.star{
+    display: inline-flex;
+    padding: 4%;
+    border-radius: 150px;
+    margin: 25px 0 0 25px;
+    background-color: var(--transparente);
+    align-items: center;
+}
+
+div .star img {
+    display: flex;
+    width: 100%;
+}
+
+.tex{
+    color: var(--White);
+    padding: 20px 30px;
+}
+.titulo{
+    font-family: var(--texto_1);
+}
+
+.botones{
+    padding: 20px 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parrafo{
+    font-size: 10pt;
+    font-weight: 400;
+    font-family: var(--texto_1);
+    color: var(--LightGrey);
+    line-height: 20px;    
+}
+
+button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+button:focus{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+
+
+.select{
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    border:none;
+    color: var(--LightGrey);
+    font-family: var(--texto_1);
+    background-color: var(--transparente);
+    cursor: pointer;
+    font-weight: 400;    
+}
+
+.sub{
+   display:flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 30px;
+   margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 13px;
+    font-family: var(--texto_1);
+    letter-spacing: 6px;
+    background-color: var(--Orange);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
