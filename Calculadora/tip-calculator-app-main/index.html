@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>calculator app</title>
+  </head>
+  <body>
+    <div class="titulo">
+      <p>SPLI</p>
+      <p>TTER</p>
+    </div>
+    <form name="from" action="#" method="get" class="conteiner">
+      <p class="title">Bill</p>
+      <div class="precio">
+        <label>
+          <img src="./images/icon-dollar.svg" alt="imagen" /><input
+            id="total_cuenta"
+            type="number"
+            min="0"
+            step="0.01"
+            placeholder="0"
+          />
+        </label>
+      </div>
+      <p class="title">Select Tip %</p>
+      <div class="porcentaje">
+        <div class="iz">
+          <button value="5" onclick="porcent_5(5);amoud(5);">5%</button>
+          <button value="15" onclick="porcent_5(15);amoud(15);">15%</button>
+          <button value="50" onclick="porcent_5(50);amoud(50);">50%</button>
+        </div>
+        <div class="der">
+          <button value="10" onclick="porcent_5(10);amoud(10);">10%</button>
+          <button value="25" onclick="porcent_5(25);amoud(25);">25%</button>
+          <button value="0" onclick="porcent_5(0);amoud(0);">0%</button>
+        </div>
+      </div>
+      <p class="title">Number of People</p>
+      <div class="precio">
+        <label>
+          <img src="./images/icon-person.svg" alt="imagen" /><input
+            id="participantes"
+            type="number"
+            min="1"
+            step="1"
+            placeholder="0"
+        /></label>
+      </div>
+      <div class="contenedor2">
+        <label class="cont_2">
+          <label class="cont_2">
+            <div class="iz_1">
+              <div>
+                <p class="normal">Tip Amount</p>
+                <p class="trans">/ person</p>
+              </div>
+              <div>
+                <p class="normal">Total</p>
+                <p class="trans">/ person</p>
+              </div>
+            </div>
+            <div class="der_1">
+              <input
+                class="calculo"
+                id="amout"
+                type="number"
+                min="0"
+                step=".01"
+                placeholder="$0.00"
+                disabled="disabled"
+              />
+              <input
+                class="calculo"
+                id="total"
+                type="number"
+                min="0"
+                step=".01"
+                placeholder="$0.00"
+                disabled="disabled"
+              />
+            </div>
+          </label>
+        </label>
+        <div class="boton">
+          <button type="reset" class="reset">RESET</button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
